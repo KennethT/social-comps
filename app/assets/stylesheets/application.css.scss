@@ -1,3 +1,29 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+h4 {
+  margin: 0px;
+}
+.topbar {
+  background-color: #80CED7;
+  height: 10%;
+}
+
+
+.botbar {
+  background-color: #63C7B2;
+  height: 10%;
+}
+
+
+.left {
+  background-color: #ABCABC;
+  width: 50%;
+  height: 500px;
+}
+
+.right {
+  background-color: #ffe2d7;
+  width: 50%;
+  height: 500px;
+}

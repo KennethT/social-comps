@@ -6,7 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <navbar>
-    <h4>Social Comps</h4>
+    <div class="topbar">
+      <h4>Social Comps</h4>
+    </div>
+    <div class="botbar">
+      <div class="form-group">
+        <div class="btn btn-primary"> Maps </div>
+        <div class="btn btn-primary"> Sentiment </div>
+        <div class="btn btn-primary"> Tweets </div>
+      </div>
+    </div>
   </navbar>
 
 </head>
