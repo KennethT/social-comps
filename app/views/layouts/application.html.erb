@@ -7,13 +7,21 @@
   <%= csrf_meta_tags %>
   <navbar>
     <div class="topbar">
-      <h4>Social Comps</h4>
+      <br>
+      <div class="form-group">
+        <h5>
+          Social Comps
+          <%= text_field_tag :search_term1 %> Vs.
+          <%= text_field_tag :search_term2 %>
+          <%= submit_tag 'Compare Tweets', class: 'btn btn-default' %>
+        </h4>
+      </div>
     </div>
     <div class="botbar">
       <div class="form-group">
-        <div class="btn btn-primary"> Maps </div>
-        <div class="btn btn-primary"> Sentiment </div>
-        <div class="btn btn-primary"> Tweets </div>
+        <div class="btn btn-primary col-md-4"> Maps </div>
+        <div class="btn btn-primary col-md-4"> Sentiment </div>
+        <div class="btn btn-primary col-md-4"> Tweets </div>
       </div>
     </div>
   </navbar>
