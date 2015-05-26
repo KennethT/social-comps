@@ -1,7 +1,5 @@
 $(function(){
 
-  console.log("test javascript");
-
   function initialize() {
     var mapCanvas = document.getElementById('map-canvas');
     var mapOptions = {
