@@ -9,10 +9,22 @@ $(function(){
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
 
   initialize("map-canvas",39.7392,-104.9903);
   initialize("map-canvas-2",40.7127, -74.0059);
 
+  // default sections hidden
+  $(".tweet_both").hide();
+
+  //Three Primary Buttons - Hiding and Showing
+  $(".twt_btn").on('click', function(){
+        $(".map_both").hide();
+        $(".tweet_both").show();
+  });
+
+  $(".map_btn").on('click', function(){
+        $(".tweet_both").hide();
+        $(".map_both").show();
+  });
 
 });

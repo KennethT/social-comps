@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 
   <navbar>
@@ -23,9 +24,9 @@
     </div>
     <div class="botbar">
       <div class="form-group">
-        <div class="btn btn-primary col-md-4" id="map-btn"> Maps </div>
-        <div class="btn btn-primary col-md-4" id="sen-btn"> Sentiment </div>
-        <div class="btn btn-primary col-md-4" id="twt-btn"> Tweets </div>
+        <div class="btn btn-primary col-md-4 map_btn"> Maps </div>
+        <div class="btn btn-primary col-md-4 sen_btn"> Sentiment </div>
+        <div class="btn btn-primary col-md-4 twt_btn"> Tweets </div>
       </div>
     </div>
   </navbar>
