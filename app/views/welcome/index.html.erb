@@ -5,12 +5,7 @@
 
  <div id="map-canvas"></div>
 
-<% if @tweet1 %>
- <% @tweet1.each do |tweet| %>
-   <%= tweet.text %><br>
-   <%= "#{tweet.user.screen_name}" %>
- <% end %>
- <% end %>
+ <%= render "tweet1" %>
 
 </div>
 
@@ -20,11 +15,6 @@
 
  <div id="map-canvas-2"></div>
 
- <% if @tweet2 %>
-  <% @tweet2.each do |tweet| %>
-    <%= tweet.text %><br>
-    <%= "#{tweet.user.screen_name}" %>
-  <% end %>
-  <% end %>
+ <%= render "tweet2" %>
 
 </div>
