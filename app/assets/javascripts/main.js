@@ -22,7 +22,7 @@ $(function(){
 
     map = new google.maps.Map(document.getElementById(mapName), {
       center: sanFrancisco,
-      zoom: 13,
+      zoom: 3,
       mapTypeId: google.maps.MapTypeId.SATELLITE
     });
 
