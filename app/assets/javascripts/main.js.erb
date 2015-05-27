@@ -1,4 +1,29 @@
 $(function(){
+
+  // latLong mapping code, work in progress
+  // var defaultMap = [];
+  // function mapLatLong(dataPoint) {
+  //   if (mapName==="map-canvas")
+  //      var locations = <%= raw @geo1 %>
+  //   else {
+  //      var locations = <%= raw @geo2 %>
+  //    };
+  //   var i = 0;
+  //   while (locations[i]) {
+  //     lat = locations[i][0];
+  //     long = locations[i][1];
+  //     i++;
+  //     if(dataPoint){
+  //       coords = {location: new google.maps.LatLng(lat,long), weight: dataPoint};
+  //       defaultMap.push(coords);
+  //     }
+  //     else{
+  //       coords = new google.maps.LatLng(lat,long);
+  //       defaultMap.push(coords);
+  //     }
+  //   }
+  // };
+
   // Code for google map api calls
   function initialize(mapName, lat, long) {
     var heatmapData = [
