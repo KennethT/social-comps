@@ -1,5 +1,5 @@
 $(function(){
-
+  // Code for google map api calls
   function initialize(mapName, lat, long) {
     var mapCanvas = document.getElementById(mapName);
     var mapOptions = {
