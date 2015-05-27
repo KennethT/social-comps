@@ -18,10 +18,10 @@ $(function(){
       new google.maps.LatLng(37.785, -122.435)
     ];
 
-    var sanFrancisco = new google.maps.LatLng(lat, long);
+    var citylatLong = new google.maps.LatLng(lat, long);
 
     map = new google.maps.Map(document.getElementById(mapName), {
-      center: sanFrancisco,
+      center: citylatLong,
       zoom: 3,
       mapTypeId: google.maps.MapTypeId.SATELLITE
     });
