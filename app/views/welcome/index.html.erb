@@ -1,7 +1,9 @@
 
 
 <div class="col-md-6 left">
- map 1
+  <% if @tweet1.present? %>
+  <h4>Tweet: <%= params[:search_term1] %></h4>
+  <% end %>
 
  <div class="map_both">
    <div id="map-canvas"></div>
@@ -19,7 +21,9 @@
 
 
 <div class="col-md-6 right">
- map 2
+  <% if @tweet2.present? %>
+  <h4>Tweet: <%= params[:search_term2] %></h4>
+  <% end %>
 
  <div class="map_both">
    <div id="map-canvas-2"></div>
