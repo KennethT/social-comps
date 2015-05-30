@@ -2,17 +2,16 @@ $(function(){
 
   // latLong mapping code, work in progress
   // var defaultMap = [];
-  // function mapLatLong(dataPoint) {
-  //   if (mapName==="map-canvas")
-  //      var locations = <%= raw @geo1 %>
-  //   else {
-  //      var locations = <%= raw @geo2 %>
-  //    };
+  // var heatmap, pointArray;
+  // function mapLL(dataPoint) {
+  //   var defaultMap = [];
+  //   var locations = <%= raw @geo1 %>;
   //   var i = 0;
   //   while (locations[i]) {
   //     lat = locations[i][0];
   //     long = locations[i][1];
   //     i++;
+  //
   //     if(dataPoint){
   //       coords = {location: new google.maps.LatLng(lat,long), weight: dataPoint};
   //       defaultMap.push(coords);
@@ -22,7 +21,27 @@ $(function(){
   //       defaultMap.push(coords);
   //     }
   //   }
+  //   // }
   // };
+
+  // function initialize(mapName, lat, long) {
+  //   mapLL(1);
+  //
+  //   var citylatLong = new google.maps.LatLng(lat, long);
+  //
+  //   map = new google.maps.Map(document.getElementById(mapName), {
+  //     center: citylatLong,
+  //     zoom: 3,
+  //     mapTypeId: google.maps.MapTypeId.SATELLITE
+  //   });
+  //
+  //   var pointArray = new google.maps.MVCArray(mapCoordinates);
+  //
+  //   var heatmap = new google.maps.visualization.HeatmapLayer({
+  //     data: pointArray
+  //   });
+  //   heatmap.setMap(map);
+  // }
 
   // Code for google map api calls
   function initialize(mapName, lat, long) {
