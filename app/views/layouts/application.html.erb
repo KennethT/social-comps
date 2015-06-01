@@ -3,10 +3,7 @@
 <head>
   <title>SocialComp</title>
 
-  <script>
-    var locations = <%= raw @geo1 %>
-    var locations2 = <%= raw @geo2 %>
-  </script>
+
 
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -44,6 +41,14 @@
 
 <%= yield %>
 
+  <!-- This javascript renders the google api maps -->
+<script>
+  var locations = <%= raw @geo1 %>
+  var locations2 = <%= raw @geo2 %>
+
+  mapBuilder('map-canvas', locations)
+  mapBuilder('map-canvas-2', locations2)
+</script>
 </body>
 
 </html>
