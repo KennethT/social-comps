@@ -10,7 +10,7 @@ function initializeHeatMap(mapName, loc, mapCoordinates) {
   document.getElementById(mapName).style.display="block";
   makeCoords(1, loc, mapCoordinates);
   var heatMapOptions = {
-    zoom: 2,
+    zoom: 1,
     center: new google.maps.LatLng(39.7392,-104.9903),
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
