@@ -1,6 +1,5 @@
 <% if @tweet2 %>
  <% @tweet2.each do |tweet| %>
-   <%= tweet.text %><br>
-   <%= "#{tweet.user.screen_name}" %>
+  <%= tweet.text %>  <em><%= tweet.user.screen_name %></em><br>
  <% end %>
  <% end %>
