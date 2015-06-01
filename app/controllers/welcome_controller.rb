@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
     end
 
     if params[:search_term2].present?
-      @tweet2 = $twitter.search("#{params[:search_term2]}", result_type: "recent", lang: "en", geo_enabled: "true").take(500)
+      @tweet2 = $twitter.search("#{params[:search_term2]}", result_type: "recent", lang: "en", geo_enabled: "true").take(10)
 
 
       @geo2 = @tweet2.map do |tweet|
