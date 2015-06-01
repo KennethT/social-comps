@@ -1,5 +1,8 @@
 $(function(){
 
+  // locations is the js var name assigned to the geo1 table (on application layout view)
+  // locations2 is the js var name assigned to the geo1 table (on application layout view)
+
   var mapCoordinates = [];
 
   function makeCoords(dataPointWeight) {
