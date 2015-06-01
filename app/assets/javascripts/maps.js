@@ -1,10 +1,11 @@
-
-function mapBuilder(canvasname, location_data){
+// Google Maps API Integration
+function mapBuilder(canvasName, location_data){
   var mapCoordinates = [];
-  initializeHeatMap(canvasname, location_data, mapCoordinates);
+  initializeHeatMap(canvasName, location_data, mapCoordinates);
   console.log(location_data);
 }
 
+//Creates the heat map
 function initializeHeatMap(mapName, loc, mapCoordinates) {
   document.getElementById(mapName).style.display="block";
   makeCoords(1, loc, mapCoordinates);
@@ -23,10 +24,10 @@ function initializeHeatMap(mapName, loc, mapCoordinates) {
   heatmap.set('radius', 50);
 }
 
-
-function makeCoords(dataPointWeight,loc, mapCoordinates) {
+// passes along coordinates from ruby array
+// to google map API acceptable format
+function makeCoords(dataPointWeight, loc, mapCoordinates) {
   var i = 0;
-  //translate array of lat/longs to coordinates on Google Map
   while (loc[i]) {
     lat = loc[i][0];
     long = loc[i][1];
