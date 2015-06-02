@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-
+gem 'sad_panda'
 
 gem 'twitter'
 gem 'twitter-text', '~> 1.11.0'
