@@ -8,10 +8,12 @@ class WelcomeController < ApplicationController
         [tweet.geo.lat, tweet.geo.long].flatten
       end.reject {|array| array == [] || array == [0.0, 0.0] }
 
-      # creating an element to be sent to bluemix watson api / microservice
+      # creating an value of a JSON to be sent to bluemix watson api / microservice
       @watson1 = @tweet1.map do |tweet|
         tweet.text
-      end.join(', ').to_json
+      end.join(', ')
+      # watson_send1 is formatted for the watson api end point
+      @watson_send1 = {"words": @watson1}.to_json
 
     end
 
@@ -23,10 +25,13 @@ class WelcomeController < ApplicationController
         [tweet.geo.lat, tweet.geo.long].flatten
       end.reject {|array| array == [] || array == [0.0, 0.0] }
 
-      # creating an element to be sent to bluemix watson api / microservice
+      # creating an value of a JSON to be sent to bluemix watson api / microservice
       @watson2 = @tweet2.map do |tweet|
         tweet.text
-      end.join(', ').to_json
+      end.join(', ')
+      # watson_send1 is formatted for the watson api end point
+      @watson_send2 = {"words": @watson2}.to_json
+
 
 
     end
