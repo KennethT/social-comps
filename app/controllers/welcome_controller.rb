@@ -15,6 +15,16 @@ class WelcomeController < ApplicationController
       # watson_send1 is formatted for the watson api end point
       @watson_send1 = {"words": @watson1}.to_json
 
+      conn = Faraday.new(:url => 'http://socialcompnodered.mybluemix.net')
+      # post request to watson api
+      response1 = conn.post do |req|
+        req.url '/personality'
+        req.headers['Content-Type'] = 'application/json'
+        req.body = @watson_send1
+      end
+
+      @watson_data1 = JSON.parse(response1.body)
+
     end
 
     if params[:search_term2].present?
@@ -29,8 +39,16 @@ class WelcomeController < ApplicationController
       @watson2 = @tweet2.map do |tweet|
         tweet.text
       end.join(', ')
-      # watson_send1 is formatted for the watson api end point
+      # watson_send2 is formatted for the watson api end point
       @watson_send2 = {"words": @watson2}.to_json
+      # post request to watson api
+      response2 = conn.post do |req|
+        req.url '/personality'
+        req.headers['Content-Type'] = 'application/json'
+        req.body = @watson_send2
+      end
+
+      @watson_data2 = JSON.parse(response2.body)
 
 
 
