@@ -51,6 +51,8 @@ class WelcomeController < ApplicationController
       @watson_data2 = JSON.parse(response2.body)
 
 
+      @openness_name = @watson_data1["children"][0]["children"][0]["children"][0]["name"]
+      @openness_rating = @watson_data1["children"][0]["children"][0]["children"][0]["percentage"]
 
     end
 
