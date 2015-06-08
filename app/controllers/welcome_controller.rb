@@ -13,7 +13,7 @@ class WelcomeController < ApplicationController
         tweet.text
       end.join(', ')
       # watson_send1 is formatted for the watson api end point
-      @watson_send1 = {"words": @watson1}.to_json
+      @watson_send1 = {"words" => @watson1}.to_json
 
       conn = Faraday.new(:url => 'http://socialcompnodered.mybluemix.net')
       # post request to watson api
@@ -40,7 +40,7 @@ class WelcomeController < ApplicationController
         tweet.text
       end.join(', ')
       # watson_send2 is formatted for the watson api end point
-      @watson_send2 = {"words": @watson2}.to_json
+      @watson_send2 = {"words" => @watson2}.to_json
       # post request to watson api
       response2 = conn.post do |req|
         req.url '/personality'
