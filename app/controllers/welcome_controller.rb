@@ -50,9 +50,18 @@ class WelcomeController < ApplicationController
 
       @watson_data2 = JSON.parse(response2.body)
 
+      # OCEAN for watson1 data
+      @openness_name1 = @watson_data1["children"][0]["children"][0]["children"][0]["id"]
+      @openness_rating1 = @watson_data1["children"][0]["children"][0]["children"][0]["percentage"]
+      @conscientiousness_name1 = @watson_data1["children"][0]["children"][0]["children"][1]["id"]
+      @conscientiousness_rating1 = @watson_data1["children"][0]["children"][0]["children"][1]["percentage"]
+      @extraversion_name1 = @watson_data1["children"][0]["children"][0]["children"][2]["id"]
+      @extraversion_rating1 = @watson_data1["children"][0]["children"][0]["children"][2]["percentage"]
+      @agreeableness_name1 = @watson_data1["children"][0]["children"][0]["children"][3]["id"]
+      @agreeableness_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"]
+      @neuroticism_name1 = @watson_data1["children"][0]["children"][0]["children"][3]["id"]
+      @neuroticism_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"]
 
-      @openness_name = @watson_data1["children"][0]["children"][0]["children"][0]["name"]
-      @openness_rating = @watson_data1["children"][0]["children"][0]["children"][0]["percentage"]
 
     end
 

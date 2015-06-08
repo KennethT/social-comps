@@ -1,6 +1,22 @@
 Personality Analysis
 <br>
-<%= @openness_name %>
+<%= @openness_rating1 %>
+<%= @conscientiousness_rating1 %>
+<%= @extraversion_rating1 %>
+<%= @agreeableness_rating1 %>
+<%= @neuroticism_rating1 %>
 <br>
-<%= @openness_rating %>
-</div>
+<script>
+var openness_rating1 = <%= @openness_rating1 %>
+var conscientiousness_rating1 = <%= @conscientiousness_rating1 %>
+var extraversion_rating1 = <%= @extraversion_rating1 %>
+var agreeableness_rating1 = <%= @agreeableness_rating1 %>
+var neuroticism_rating1 = <%= @neuroticism_rating1 %>
+
+
+// drawChart(openness_rating1, conscientiousness_rating1, extraversion_rating1, agreeableness_rating1, neuroticism_rating1);
+drawChart();
+
+</script>
+
+<div id="chart_div"></div>
