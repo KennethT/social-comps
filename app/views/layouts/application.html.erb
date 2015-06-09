@@ -21,20 +21,22 @@
 
 
   <navbar>
-    <div class="topbar">
+    <div class="topbar text-center">
       <br>
       <div class="form-group">
-        <h5>
+        <h4>
           Social Comps
+        </h4><h5>
           <%= form_tag '/', method: :get do %>
           <%= text_field_tag :search_term1, nil, placeholder: 'First Brand' %> Vs.
           <%= text_field_tag :search_term2, nil, placeholder: 'Second Brand' %>
+        </h5>
           <%= submit_tag 'Compare Tweets', class: 'btn btn-primary' %>
           <% end %>
-        </h4>
+
       </div>
     </div>
-    <div class="botbar">
+    <div class="botbar text-center">
       <div class="form-group">
         <div class="btn btn-primary col-md-4 map_btn"> Maps </div>
         <div class="btn btn-primary col-md-4 sen_btn"> Personality </div>
