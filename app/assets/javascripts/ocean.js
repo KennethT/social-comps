@@ -11,16 +11,18 @@ function drawChart() {
   data.addColumn('number', 'Rating');
   data.addRows([
     ['Openness', oR],
-    ['Conscientiousness', cR],
+    ['Conscientious', cR],
     ['Extraversion', eR],
     ['Agreeableness', aR],
     ['Neuroticism', nR]
   ]);
 
   // Set chart options
-  var options = {'title':'Big Five Personality Model',
-  'width':600,
-  'height':450};
+  var options ={ 'title':'Big Five Personality Model',
+  'legend': 'none',
+  'width':500,
+  'height':550,
+  hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
@@ -35,16 +37,18 @@ function drawChart2() {
   data.addColumn('number', 'Rating');
   data.addRows([
     ['Openness', oR2],
-    ['Conscientiousness', cR2],
+    ['Conscientious', cR2],
     ['Extraversion', eR2],
     ['Agreeableness', aR2],
     ['Neuroticism', nR2]
   ]);
 
   // Set chart options
-  var options = {'title':'Big Five Personality Model',
-  'width':600,
-  'height':450};
+  var options ={ 'title':'Big Five Personality Model',
+  'legend': 'none',
+  'width':500,
+  'height':550,
+  hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
