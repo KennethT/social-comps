@@ -10,11 +10,11 @@ function drawChart() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Openness', oR],
-    ['Conscientious', cR],
-    ['Extraversion', eR],
+    ['Neuroticism', nR],
     ['Agreeableness', aR],
-    ['Neuroticism', nR]
+    ['Extraversion', eR],
+    ['Conscientious', cR],
+    ['Openness', oR]
   ]);
 
   // Set chart options
@@ -36,11 +36,11 @@ function drawChart2() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Openness', oR2],
-    ['Conscientious', cR2],
-    ['Extraversion', eR2],
+    ['Neuroticism', nR2],
     ['Agreeableness', aR2],
-    ['Neuroticism', nR2]
+    ['Extraversion', eR2],
+    ['Conscientious', cR2],
+    ['Openness', oR2],
   ]);
 
   // Set chart options
