@@ -3,6 +3,7 @@ $(function(){
   // default sections hidden
   $(".tweet_both").hide();
   $(".personality_both").hide();
+  $(".sentiment_both").hide();
 
   //Three Primary Buttons - Hiding and Showing
   function buttonSelect(cssElement, selectedItem, deselected1, deselected2, deselected3) {
@@ -10,7 +11,7 @@ $(function(){
       $(selectedItem).show();
       $(deselected1).hide();
       $(deselected2).hide();
-      $(deselected2).hide();
+      $(deselected3).hide();
     });
   }
 

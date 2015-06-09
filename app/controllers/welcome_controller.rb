@@ -16,7 +16,7 @@ class WelcomeController < ApplicationController
       @watson_send1 = {"words" => @watson1}.to_json
 
       conn = Faraday.new(:url => 'http://socialcompnodered.mybluemix.net')
-      # post request to watson api
+      # post request to watson personality insights api
       response1 = conn.post do |req|
         req.url '/personality'
         req.headers['Content-Type'] = 'application/json'
@@ -24,6 +24,15 @@ class WelcomeController < ApplicationController
       end
 
       @watson_data1 = JSON.parse(response1.body)
+
+      # post request to bluemix sentiment api, this analyzes the sentiment of the first tweet query
+      response_insights1 = conn.post do |req|
+        req.url '/sentiment'
+        req.headers['Content-Type'] = 'application/json'
+        req.body = @watson_send1
+      end
+
+      @watson_sentiment1 = response_insights1.body
 
     end
 
@@ -41,7 +50,7 @@ class WelcomeController < ApplicationController
       end.join(', ')
       # watson_send2 is formatted for the watson api end point
       @watson_send2 = {"words" => @watson2}.to_json
-      # post request to watson api
+      # post request to watson  personality insights api
       response2 = conn.post do |req|
         req.url '/personality'
         req.headers['Content-Type'] = 'application/json'
@@ -49,6 +58,17 @@ class WelcomeController < ApplicationController
       end
 
       @watson_data2 = JSON.parse(response2.body)
+
+      # post request to bluemix sentiment api, this analyzes the sentiment of the first tweet query
+      response_insights2 = conn.post do |req|
+        req.url '/sentiment'
+        req.headers['Content-Type'] = 'application/json'
+        req.body = @watson_send2
+      end
+
+      @watson_sentiment2 = response_insights2.body
+
+
 
       # OCEAN for watson1 data
       @openness_name1 = @watson_data1["children"][0]["children"][0]["children"][0]["id"] * 100
