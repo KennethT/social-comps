@@ -12,11 +12,14 @@
   <script type="text/javascript">
   // Load the Visualization API and the piechart package.
   google.load('visualization', '1.0', {'packages':['corechart']});
+  google.load("visualization", "1", {packages:["gauge"]});
   </script>
   <script>
   // Set a callback to run when the Google Visualization API is loaded.
   google.setOnLoadCallback(drawChart);
   google.setOnLoadCallback(drawChart2);
+  google.setOnLoadCallback(drawGaugeChart);
+  google.setOnLoadCallback(drawGaugeChart2);
   </script>
 
 
