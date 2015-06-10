@@ -1,6 +1,10 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ body {
+   font-family: 'Oxygen', sans-serif;
+ }
 h4 {
   margin: 0px;
 }
@@ -42,6 +46,7 @@ h5 {
     height: 400px;
     background-color: #FFF;
     margin:auto;
+    padding-top: 10px;
 }
 
 #map-canvas-2 {
@@ -49,4 +54,22 @@ h5 {
     height: 400px;
     background-color: #FFF;
     margin:auto;
+    padding-top: 10px;
+}
+
+#chart_gauge1_div {
+  margin:auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+#chart_gauge2_div {
+  margin:auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.personality_both {
+  margin:auto;
+  padding-top: 10px;
 }
