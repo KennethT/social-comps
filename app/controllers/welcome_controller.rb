@@ -94,20 +94,42 @@ class WelcomeController < ApplicationController
       @neuroticism_name2 = @watson_data2["children"][0]["children"][0]["children"][3]["id"] * 100
       @neuroticism_rating2 = @watson_data2["children"][0]["children"][0]["children"][3]["percentage"] * 100
 
+
+      # Needs for watson1 data
+      @need_challenge1 = @watson_data1["children"][1]["children"][0]["children"][0]["percentage"]
+      @need_closeness1 = @watson_data1["children"][1]["children"][0]["children"][1]["percentage"]
+      @need_curiosity1 = @watson_data1["children"][1]["children"][0]["children"][2]["percentage"]
+      @need_excitement1 = @watson_data1["children"][1]["children"][0]["children"][3]["percentage"]
+      @need_harmony1 = @watson_data1["children"][1]["children"][0]["children"][4]["percentage"]
+      @need_ideal1 = @watson_data1["children"][1]["children"][0]["children"][5]["percentage"]
+      @need_liberty1 = @watson_data1["children"][1]["children"][0]["children"][6]["percentage"]
+      @need_love1 = @watson_data1["children"][1]["children"][0]["children"][7]["percentage"]
+      @need_practicality1 = @watson_data1["children"][1]["children"][0]["children"][8]["percentage"]
+      @need_selfexpression1 = @watson_data1["children"][1]["children"][0]["children"][9]["percentage"]
+      @need_stability1 = @watson_data1["children"][1]["children"][0]["children"][10]["percentage"]
+      @need_structure1 = @watson_data1["children"][1]["children"][0]["children"][11]["percentage"]
+
+      # Needs for watson2 data
+      @need_challenge2 = @watson_data1["children"][1]["children"][0]["children"][0]["percentage"]
+      @need_closeness2 = @watson_data1["children"][1]["children"][0]["children"][1]["percentage"]
+      @need_curiosity2 = @watson_data1["children"][1]["children"][0]["children"][2]["percentage"]
+      @need_excitement2 = @watson_data1["children"][1]["children"][0]["children"][3]["percentage"]
+      @need_harmony2 = @watson_data1["children"][1]["children"][0]["children"][4]["percentage"]
+      @need_ideal2 = @watson_data1["children"][1]["children"][0]["children"][5]["percentage"]
+      @need_liberty2 = @watson_data1["children"][1]["children"][0]["children"][6]["percentage"]
+      @need_love2 = @watson_data1["children"][1]["children"][0]["children"][7]["percentage"]
+      @need_practicality2 = @watson_data1["children"][1]["children"][0]["children"][8]["percentage"]
+      @need_selfexpression2 = @watson_data1["children"][1]["children"][0]["children"][9]["percentage"]
+      @need_stability2 = @watson_data1["children"][1]["children"][0]["children"][10]["percentage"]
+      @need_structure2 = @watson_data1["children"][1]["children"][0]["children"][11]["percentage"]
+
+
+
+
+
     end
 
-    # This is the Sentiment Analysis portion
 
-    # @tweet1.each do |tweet|
-    #    @emotion = SadPanda.emotion(tweet.text.dup).capitalize
-    #    Tweet.create(emotion: @emotion, text: tweet.text, screen_name: tweet.user.screen_name)
-    #  end
-    #
-    #  @emotions = @tweet1.map do |tweet|
-    #    SadPanda.emotion(tweet.text.dup).capitalize
-    #  end.uniq
-    #
-    #  @emotions.delete_if {|i| i == "Ambiguous"}
 
   end
 
