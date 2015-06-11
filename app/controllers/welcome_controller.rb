@@ -123,8 +123,19 @@ class WelcomeController < ApplicationController
       @need_stability2 = @watson_data2["children"][1]["children"][0]["children"][10]["percentage"]
       @need_structure2 = @watson_data2["children"][1]["children"][0]["children"][11]["percentage"]
 
+      # Values for watson1 data
+      @values_conservation1 = @watson_data1["children"][2]["children"][0]["children"][0]["percentage"]
+      @values_openness_to_change1 = @watson_data1["children"][2]["children"][0]["children"][1]["percentage"]
+      @values_hedonism1 = @watson_data1["children"][2]["children"][0]["children"][2]["percentage"]
+      @values_self_enhancement1 = @watson_data1["children"][2]["children"][0]["children"][3]["name"]
+      @values_self_transcendence1 = @watson_data1["children"][1]["children"][0]["children"][4]["percentage"]
 
-
+      # Values for watson1 data
+      @values_conservation2 = @watson_data2["children"][2]["children"][0]["children"][0]["percentage"]
+      @values_openness_to_change2 = @watson_data2["children"][2]["children"][0]["children"][1]["percentage"]
+      @values_hedonism2 = @watson_data2["children"][2]["children"][0]["children"][2]["percentage"]
+      @values_self_enhancement2 = @watson_data2["children"][2]["children"][0]["children"][3]["name"]
+      @values_self_transcendence2 = @watson_data2["children"][1]["children"][0]["children"][4]["percentage"]
 
 
     end
