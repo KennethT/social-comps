@@ -28,7 +28,7 @@ function drawNeedsChart() {
   var options ={ 'title':'Needs Chart',
   'legend': 'none',
   'width':500,
-  'height':550,
+  'height':600,
   min: 0,
   max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
@@ -63,7 +63,7 @@ function drawNeedsChart2() {
   var options ={ 'title':'Needs Chart',
   'legend': 'none',
   'width':500,
-  'height':550,
+  'height':600,
   min: 0,
   max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
