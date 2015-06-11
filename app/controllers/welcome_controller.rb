@@ -110,18 +110,18 @@ class WelcomeController < ApplicationController
       @need_structure1 = @watson_data1["children"][1]["children"][0]["children"][11]["percentage"]
 
       # Needs for watson2 data
-      @need_challenge2 = @watson_data1["children"][1]["children"][0]["children"][0]["percentage"]
-      @need_closeness2 = @watson_data1["children"][1]["children"][0]["children"][1]["percentage"]
-      @need_curiosity2 = @watson_data1["children"][1]["children"][0]["children"][2]["percentage"]
-      @need_excitement2 = @watson_data1["children"][1]["children"][0]["children"][3]["percentage"]
-      @need_harmony2 = @watson_data1["children"][1]["children"][0]["children"][4]["percentage"]
-      @need_ideal2 = @watson_data1["children"][1]["children"][0]["children"][5]["percentage"]
-      @need_liberty2 = @watson_data1["children"][1]["children"][0]["children"][6]["percentage"]
-      @need_love2 = @watson_data1["children"][1]["children"][0]["children"][7]["percentage"]
-      @need_practicality2 = @watson_data1["children"][1]["children"][0]["children"][8]["percentage"]
-      @need_selfexpression2 = @watson_data1["children"][1]["children"][0]["children"][9]["percentage"]
-      @need_stability2 = @watson_data1["children"][1]["children"][0]["children"][10]["percentage"]
-      @need_structure2 = @watson_data1["children"][1]["children"][0]["children"][11]["percentage"]
+      @need_challenge2 = @watson_data2["children"][1]["children"][0]["children"][0]["percentage"]
+      @need_closeness2 = @watson_data2["children"][1]["children"][0]["children"][1]["percentage"]
+      @need_curiosity2 = @watson_data2["children"][1]["children"][0]["children"][2]["percentage"]
+      @need_excitement2 = @watson_data2["children"][1]["children"][0]["children"][3]["percentage"]
+      @need_harmony2 = @watson_data2["children"][1]["children"][0]["children"][4]["percentage"]
+      @need_ideal2 = @watson_data2["children"][1]["children"][0]["children"][5]["percentage"]
+      @need_liberty2 = @watson_data2["children"][1]["children"][0]["children"][6]["percentage"]
+      @need_love2 = @watson_data2["children"][1]["children"][0]["children"][7]["percentage"]
+      @need_practicality2 = @watson_data2["children"][1]["children"][0]["children"][8]["percentage"]
+      @need_selfexpression2 = @watson_data2["children"][1]["children"][0]["children"][9]["percentage"]
+      @need_stability2 = @watson_data2["children"][1]["children"][0]["children"][10]["percentage"]
+      @need_structure2 = @watson_data2["children"][1]["children"][0]["children"][11]["percentage"]
 
 
 
