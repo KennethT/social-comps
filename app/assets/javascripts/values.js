@@ -11,7 +11,7 @@ function drawValuesChart() {
   data.addColumn('number', 'Rating');
   data.addRows([
     ['Conservation', conservation1],
-    ['Openness to Change', openness_to_change1],
+    ['Open to Change', openness_to_change1],
     ['Hedonism', hedonism1],
     ['Self Enhancement', self_enhancement1],
     ['Self Transcendence', self_transcendence1]
@@ -21,7 +21,7 @@ function drawValuesChart() {
   var options ={ 'title':'Values Chart',
   'legend': 'none',
   'width':500,
-  'height':550,
+  'height':700,
   min: 0,
   max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
@@ -39,7 +39,7 @@ function drawValuesChart2() {
   data.addColumn('number', 'Rating');
   data.addRows([
     ['Conservation', conservation2],
-    ['Openness to Change', openness_to_change2],
+    ['Open to Change', openness_to_change2],
     ['Hedonism', hedonism2],
     ['Self Enhancement', self_enhancement2],
     ['Self Transcendence', self_transcendence2]
@@ -49,7 +49,7 @@ function drawValuesChart2() {
   var options ={ 'title':'Values Chart',
   'legend': 'none',
   'width':500,
-  'height':550,
+  'height':700,
   min: 0,
   max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
