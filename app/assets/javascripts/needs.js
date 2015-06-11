@@ -10,10 +10,10 @@ function drawNeedsChart() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Neuroticism', need_challenge1],
-    ['Agreeableness', need_closeness1],
-    ['Extraversion', need_curiosity1],
-    ['Conscientious', need_excitement1],
+    ['Challenge', need_challenge1],
+    ['Closeness', need_closeness1],
+    ['Curiosity', need_curiosity1],
+    ['Need Excitement', need_excitement1],
     ['Harmony', need_harmony1],
     ['Ideal', need_ideal1],
     ['Liberty', need_liberty1],
@@ -45,10 +45,10 @@ function drawNeedsChart2() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Neuroticism', need_challenge2],
-    ['Agreeableness', need_closeness2],
-    ['Extraversion', need_curiosity2],
-    ['Conscientious', need_excitement2],
+    ['Challenge', need_challenge2],
+    ['Closeness', need_closeness2],
+    ['Curiosity', need_curiosity2],
+    ['Need Excitement', need_excitement2],
     ['Harmony', need_harmony2],
     ['Ideal', need_ideal2],
     ['Liberty', need_liberty2],
@@ -65,7 +65,7 @@ function drawNeedsChart2() {
   'width':500,
   'height':550,
   min: 0,
-  max: 1, 
+  max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.

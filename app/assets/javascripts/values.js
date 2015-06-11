@@ -10,11 +10,11 @@ function drawValuesChart() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Neuroticism', conservation1],
-    ['Agreeableness', openness_to_change1],
-    ['Extraversion', hedonism1],
-    ['Conscientious', self_enhancement1],
-    ['Harmony', self_transcendence1]
+    ['Conservation', conservation1],
+    ['Openness to Change', openness_to_change1],
+    ['Hedonism', hedonism1],
+    ['Self Enhancement', self_enhancement1],
+    ['Self Transcendence', self_transcendence1]
   ]);
 
   // Set chart options
@@ -38,11 +38,11 @@ function drawValuesChart2() {
   data.addColumn('string', 'Attribute');
   data.addColumn('number', 'Rating');
   data.addRows([
-    ['Neuroticism', conservation2],
-    ['Agreeableness', openness_to_change2],
-    ['Extraversion', hedonism2],
-    ['Conscientious', self_enhancement2],
-    ['Harmony', self_transcendence2]
+    ['Conservation', conservation2],
+    ['Openness to Change', openness_to_change2],
+    ['Hedonism', hedonism2],
+    ['Self Enhancement', self_enhancement2],
+    ['Self Transcendence', self_transcendence2]
   ]);
 
   // Set chart options
@@ -51,7 +51,7 @@ function drawValuesChart2() {
   'width':500,
   'height':550,
   min: 0,
-  max: 1, 
+  max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.
