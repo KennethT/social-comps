@@ -29,6 +29,8 @@ function drawNeedsChart() {
   'legend': 'none',
   'width':500,
   'height':550,
+  min: 0,
+  max: 1,
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.
@@ -62,6 +64,8 @@ function drawNeedsChart2() {
   'legend': 'none',
   'width':500,
   'height':550,
+  min: 0,
+  max: 1, 
   hAxis: {direction:-1, slantedText:true, slantedTextAngle:90 }};
 
   // Instantiate and draw our chart, passing in some options.

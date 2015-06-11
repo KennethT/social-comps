@@ -71,28 +71,18 @@ class WelcomeController < ApplicationController
 
 
       # OCEAN for watson1 data
-      @openness_name1 = @watson_data1["children"][0]["children"][0]["children"][0]["id"] * 100
-      @openness_rating1 = @watson_data1["children"][0]["children"][0]["children"][0]["percentage"] * 100
-      @conscientiousness_name1 = @watson_data1["children"][0]["children"][0]["children"][1]["id"] * 100
-      @conscientiousness_rating1 = @watson_data1["children"][0]["children"][0]["children"][1]["percentage"] * 100
-      @extraversion_name1 = @watson_data1["children"][0]["children"][0]["children"][2]["id"] * 100
-      @extraversion_rating1 = @watson_data1["children"][0]["children"][0]["children"][2]["percentage"] * 100
-      @agreeableness_name1 = @watson_data1["children"][0]["children"][0]["children"][3]["id"] * 100
-      @agreeableness_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"] * 100
-      @neuroticism_name1 = @watson_data1["children"][0]["children"][0]["children"][3]["id"] * 100
-      @neuroticism_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"] * 100
+      @openness_rating1 = @watson_data1["children"][0]["children"][0]["children"][0]["percentage"]
+      @conscientiousness_rating1 = @watson_data1["children"][0]["children"][0]["children"][1]["percentage"]
+      @extraversion_rating1 = @watson_data1["children"][0]["children"][0]["children"][2]["percentage"]
+      @agreeableness_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"]
+      @neuroticism_rating1 = @watson_data1["children"][0]["children"][0]["children"][3]["percentage"]
 
       # OCEAN for watson2 data
-      @openness_name2 = @watson_data2["children"][0]["children"][0]["children"][0]["id"] * 100
-      @openness_rating2 = @watson_data2["children"][0]["children"][0]["children"][0]["percentage"] * 100
-      @conscientiousness_name2 = @watson_data1["children"][0]["children"][0]["children"][1]["id"] * 100
-      @conscientiousness_rating2 = @watson_data2["children"][0]["children"][0]["children"][1]["percentage"] * 100
-      @extraversion_name2 = @watson_data2["children"][0]["children"][0]["children"][2]["id"] * 100
-      @extraversion_rating2 = @watson_data2["children"][0]["children"][0]["children"][2]["percentage"] * 100
-      @agreeableness_name2 = @watson_data2["children"][0]["children"][0]["children"][3]["id"] * 100
-      @agreeableness_rating2 = @watson_data2["children"][0]["children"][0]["children"][3]["percentage"] * 100
-      @neuroticism_name2 = @watson_data2["children"][0]["children"][0]["children"][3]["id"] * 100
-      @neuroticism_rating2 = @watson_data2["children"][0]["children"][0]["children"][3]["percentage"] * 100
+      @openness_rating2 = @watson_data2["children"][0]["children"][0]["children"][0]["percentage"]
+      @conscientiousness_rating2 = @watson_data2["children"][0]["children"][0]["children"][1]["percentage"]
+      @extraversion_rating2 = @watson_data2["children"][0]["children"][0]["children"][2]["percentage"]
+      @agreeableness_rating2 = @watson_data2["children"][0]["children"][0]["children"][3]["percentage"]
+      @neuroticism_rating2 = @watson_data2["children"][0]["children"][0]["children"][3]["percentage"]
 
 
       # Needs for watson1 data
