@@ -15,7 +15,7 @@ class WelcomeController < ApplicationController
       # watson_send1 is formatted for the watson api end point
       @watson_send1 = {"words" => @watson1}.to_json
 
-      conn = Faraday.new(:url => 'http://psmicro.mybluemix.net')
+      conn = Faraday.new(:url => 'http://socialcompz.mybluemix.net')
       # post request to watson personality insights api
       response1 = conn.post do |req|
         req.url '/personality'
